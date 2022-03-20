@@ -1,3 +1,4 @@
+import { AuthorsService } from './authors/authors.service';
 import { CoursesService } from './courses.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +21,8 @@ import { AuthorsComponent } from './authors/authors.component';
     AppRoutingModule
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    AuthorsService
   ],
   bootstrap: [AppComponent]
 })
